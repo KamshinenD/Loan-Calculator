@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="title-container">
+            <h1 class="title">Simple Loan Calculator</h1>
+            <p class="title-desc">The Simple Loan Calculator will determine your estimated payments for loan amounts,
+                interest rates and terms.</p>
+        </div>
+        <!-- Calculator input box -->
+
+        <form class="calculator-box" id="form">
+            <div class="form-control">
+                <div class="label">
+                    <div class="serial">
+                        <p>1</p>
+                    </div>
+                    <p class="label-desc">Loan Amount</p>
+                </div>
+                <div class="input-box">
+                    <span>₦</span>
+                    <input type="number" id="input-amount">
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="label">
+                    <div class="serial">
+                        <p>2</p>
+                    </div>
+                    <p class="label-desc">Interest Rate</p>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="input-interest-rate">
+                    <span>₦</span>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="label">
+                    <div class="serial">
+                        <p>3</p>
+                    </div>
+                    <p class="label-desc">Number of Years</p>
+                </div>
+                <div class="input-box">
+                    <span>₦</span>
+                    <input type="number" id="duration">
+                </div>
+            </div>
+            <button class="btn">Calculate</button>
+        </form>
+        <h1 class="result-header">Calculated Results</h1>
+        <div class="result-cards">
+            <div class="card monthly-payments">
+                <p class="card-amount" id="monthlyPayment"></p>
+                <p class="card-amount-desc">Monthly Payments</p>
+            </div>
+            <div class="card total-interest">
+                <p class="card-amount" id="totalInterest"></p>
+                <p class="card-amount-desc">Total Interest</p>
+            </div>
+            <div class="card total-amount">
+                <p class="card-amount" id="totalPayment"></p>
+                <p class="card-amount-desc">Total Amount</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
