@@ -14,7 +14,7 @@
 
     //calculate monthly   
     const x = Math.pow(1+ calculateInterest, calculatedPayments);
-    const monthly = (principal * x * calculateInterest)/(x-1);
+    const monthly = (principal * x * calculateInterest)/(x-1); 
     const monthlyPayment = monthly.toLocaleString("en-US");
 
     //compute interest
