@@ -1,5 +1,5 @@
 //   listen for submit
- document.getElementById('form').addEventListener('submit',computeResults)
+ document.getElementById('form').addEventListener('submit', computeResults)
 
  function computeResults(e){
     e.preventDefault()
@@ -23,10 +23,21 @@
     //Compute total payment
 
     const totalPayment =(monthly * calculatedPayments).toLocaleString("en-US");
-
     document.getElementById('monthlyPayment').innerHTML = "₦" +" " + monthlyPayment;
     document.getElementById('totalInterest').innerHTML = "₦" +" " + totalInterest;
     document.getElementById('totalPayment').innerHTML = "₦" +" " + totalPayment;
+    
+    // document.getElementById('principal').innerHTML = "₦" +" " + loanAmount;
+    // document.getElementById('rate').innerHTML = interestRate + "%";
+    // document.getElementById('years').innerHTML = duration + `(${calculatedPayments})`;
+  }
 
-    console.log(monthlyPayment, totalInterest, totalPayment)
- }
+
+  // document.querySelectorAll('.input-box').forEach(item =>{
+  //   item.addEventListener("mousedown", setFocus)
+
+  // function setFocus(){
+  //   // document.getElementById('input-box').style.border ='1px solid green'
+  //   // console.log("docuuus")
+  // }
+  // })

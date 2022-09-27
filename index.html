@@ -13,8 +13,8 @@
     <div class="parent-container">
         <div class="title-container">
             <h1 class="title">Simple Loan Calculator</h1>
-            <p class="title-desc">This Simple Loan Calculator will determine your estimated payments for loan amounts,
-                interest rates and terms.</p>
+            <p class="title-desc">This Simple Loan Calculator will help you calculate your estimated loan repayment payments for loan amounts,
+                interest rates and terms to help you make your decision.</p>
         </div>
         <!-- Calculator input box -->
 
@@ -26,7 +26,7 @@
                     </div>
                     <p class="label-desc">Loan Amount</p>
                 </div>
-                <div class="input-box">
+                <div class="input-box" id="inputBox">
                     <span>₦</span>
                     <input type="number" id="input-amount">
                 </div>
@@ -38,7 +38,7 @@
                     </div>
                     <p class="label-desc">Interest Rate</p>
                 </div>
-                <div class="input-box">
+                <div class="input-box" id="inputBox">
                     <input type="number" id="input-interest-rate">
                     <span>%</span>
                 </div>
@@ -50,13 +50,16 @@
                     </div>
                     <p class="label-desc">Number of Years</p>
                 </div>
-                <div class="input-box">
+                <div class="input-box" id="inputBox">
                     <input type="number" id="duration">
                     <span>yr</span>
                 </div>
             </div>
-            <button class="btn">Calculate</button>
+
+            <button class="btn" id="btn">Calculate</button>
         </form>
+
+        <!-- Results -->
         <h1 class="result-header">Calculated Results</h1>
         <div class="result-cards">
             <div class="card monthly-payments">
@@ -72,6 +75,12 @@
                 <p class="card-amount-desc">Total Amount</p>
             </div>
         </div>
+
+         <!-- <div class="yourvalues">
+            <p id="principal"></p>
+            <p id="rate"></p>
+            <p id="years"></p>
+        </div> -->
     </div>
 
     <script src="./js/script.js"></script>
